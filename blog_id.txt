@@ -1,0 +1,24 @@
+id blog DIC_kwDOJFO4GM4CUo3s
+
+repository(name: "devblog_fs", owner: "sonchymto1") {
+    discussions(categoryId: "DIC_kwDOJFO4GM4CUo3s", first: 100) {
+      nodes {
+        bodyHTML
+        bodyText
+        author {
+          login
+          url
+          avatarUrl
+        }
+        createdAt
+        lastEditedAt
+        title
+        url
+        labels(first: 100) {
+          nodes {
+            name
+          }
+        }
+      }
+    }
+  }
